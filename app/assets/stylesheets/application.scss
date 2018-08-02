@@ -1,0 +1,28 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "base/base";
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  padding:2em 0;
+  background-color: #eee;
+}
+nav {
+  float:right;
+  li {
+    display: inline;
+    margin-right: 1em;
+  }
+}
+main {
+  padding: 2em 0;
+}
+footer {
+  padding:2em 0;
+  background-color: #eee;
+  font-size: 10px;
+}

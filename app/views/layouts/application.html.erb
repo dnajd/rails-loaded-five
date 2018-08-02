@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Rails Loaded</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><%= link_to 'home', root_path %></li>
+        </ul>
+      </nav>
+      Rails Loaded
+    </div>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer>
+    <div class="container">
+      You Inc. 2018
+    </div>
+  </footer>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
+</html>
